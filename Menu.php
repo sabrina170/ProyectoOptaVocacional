@@ -25,7 +25,7 @@ background-color: #66999;
 <body>
 
     <nav class="navbar navbar-dark" style="background-color: #064D72;">
-    <a class="navbar-brand" href="#">Orientación Vocavional</a>
+    <a class="navbar-brand" href="index.php">Orientación Vocavional</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
