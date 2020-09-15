@@ -52,7 +52,9 @@ background-color: #66999;
 </style>
 <body>
 <nav class="navbar navbar-dark" style="background-color: #064D72;">
-	<a class="navbar-brand" href="#">Logo</a>
+	<a class="navbar-brand" href="#">
+  <img src="../img/logo.png" width="30" height="30" alt="" loading="lazy">
+  </a>
  <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-warning my-2 my-sm-0" href="cerrar-sesion.php" >Cerrar sesión</a>
  </form>
@@ -69,6 +71,21 @@ background-color: #66999;
    <div class="table-responsive" >
         <table class="table table-hover table-light" >
           <thead class="table-primary">
+          <tr>
+              <th scope="col" class="text-center"></th>
+              <th scope="col" class="text-center">1 </th>
+              <th scope="col" class="text-center">2</th>
+              <th scope="col" class="text-center">3</th>
+              <th scope="col" class="text-center">4</th>
+              <th scope="col" class="text-center">5</th>
+              <th scope="col" class="text-center">6</th>
+              <th scope="col" class="text-center">7</th>
+              <th scope="col" class="text-center">8</th>
+              <th scope="col" class="text-center">9</th>
+              <th scope="col" class="text-center">10</th>
+              <th scope="col" class="text-center">11</th>
+              <th scope="col" class="text-center">12</th>
+          </tr>
             <tr>
               <th scope="col">Estr</th>
               <th scope="col">¿Qué carrera desea <BR>estudiar mi hijo?</th>
@@ -182,7 +199,7 @@ background-color: #66999;
             </tr>
             <tr>
               <th scope="row">B</th>
-              <td><input name="B1" class="form-control" placeholder="Ej. Ing. de Sistemas" style="width:170px" type="text" required/></td>
+              <td><input name="B1" class="form-control"  style="width:170px" type="text" required/></td>
               <td>
                 <select  name="B2" class="form-control" style="width:170px" required>
                   <option value=""></option>
@@ -200,7 +217,7 @@ background-color: #66999;
                   <option value="Curso">Curso</option>
                 </select>
               </td>
-              <td><input name="B4" type="text" class="form-control" placeholder="Ej. San Marcos" style="width:170px" required/></td>
+              <td><input name="B4" type="text" class="form-control"  style="width:170px" required/></td>
               <td>
               <select  name="B5" class="form-control" style="width:170px"  required>
                   <option value=""></option>
@@ -228,11 +245,11 @@ background-color: #66999;
                 </select>
               </td>
               <td>
-                <input name="B8" type="text" class="form-control" placeholder="Ej. Lima" 
+                <input name="B8" type="text" class="form-control" 
                 style="width:170px" required/>
               </td>
               <td>
-                <input name="B9" type="number" class="form-control" placeholder="Ej. S/350"   style="width:170px" required/>
+                <input name="B9" type="number" class="form-control" style="width:170px" required/>
               </td>
               <td>
                 <select  name="B10" class="form-control" style="width:170px" required>
@@ -275,7 +292,7 @@ background-color: #66999;
             </tr>
             <tr>
               <th scope="row">C</th>
-              <td><input name="C1" class="form-control" placeholder="Ej. Ing. de Sistemas" style="width:170px" type="text" required/></td>
+              <td><input name="C1" class="form-control"  style="width:170px" type="text" required/></td>
               <td>
                 <select  name="C2" class="form-control" style="width:170px" required>
                   <option value=""></option>
@@ -293,7 +310,7 @@ background-color: #66999;
                   <option value="Curso">Curso</option>
                 </select>
               </td>
-              <td><input name="C4" type="text" class="form-control" placeholder="Ej. San Marcos" style="width:170px" required/></td>
+              <td><input name="C4" type="text" class="form-control"  style="width:170px" required/></td>
               <td>
               <select  name="C5" class="form-control" style="width:170px"  required>
                   <option value=""></option>
@@ -321,11 +338,11 @@ background-color: #66999;
                 </select>
               </td>
               <td>
-                <input name="C8" type="text" class="form-control" placeholder="Ej. Lima"  
+                <input name="C8" type="text" class="form-control"  
                 style="width:170px" required/>
               </td>
               <td>
-                <input name="C9" type="number" class="form-control" placeholder="Ej. S/350"   style="width:170px" required/>
+                <input name="C9" type="number" class="form-control"   style="width:170px" required/>
               </td>
               <td>
                 <select  name="C10" class="form-control" style="width:170px" required>

@@ -81,6 +81,19 @@ WHERE fecha_registro < (current_time() - INTERVAL 5 minute) and privilegio="2";
 
 drop EVENT insertion_event3
 
+SELECT * FROM resultados
+
+DELETE FROM resultados WHERE id_usu=6
+
+CREATE TABLE UsuarioPublico(
+id int PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(45),
+correo VARCHAR(100)
+)
+
+SELECT * FROM UsuarioPublico
+DROP TABLE UsuarioPublico
+
 
   
 

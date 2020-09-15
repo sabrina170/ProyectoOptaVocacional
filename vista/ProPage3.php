@@ -82,7 +82,7 @@ $resultado->execute();
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nostros</title>
+       
     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -98,7 +98,6 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
-background-color: #66999;
 }
 </style>
 <body>
@@ -109,63 +108,57 @@ background-color: #66999;
  </form>
 </nav>
 
-
-    <div class="card mb-3" style="max-width: 340px;">
-        <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="../img/user.png" class="card-img" width="50px;" height="100px;">
-              </div>
-              <div class="col-md-8">
-                  <div class="card-body">
-                      <div class="text-left"><strong>NOMBRE:</strong>
-                        <?php  echo $_SESSION['registro']['Apellidos'];?>
-                        <?php  echo $_SESSION['registro']['Nombres'];?>
-                      </div>
-                      <div class="text-left"><strong>EDAD:</strong> 
-                      <?php  echo $_SESSION['registro']['Edad'];?> Años
-                      </div> 
-                  </div>
-              </div>
-        </div>
-    </div>
-<div class="d-flex justify-content-center" >
-<div class="card border-primary mb-3" style="max-width: 40rem;">
-<div class="text-center" style="margin:10px;">
-      <h3 class="card-title">Tu Posibilidades de Elección</h3>
-      <p class="card-text">Puedes escoger una o mas estrategias de tal manera que la suma debe ser 100.</p>
-      <h5 class="card-title">Pregunta guia: ¿Que posibilidad hay que elijas la estrategia "x".?</h5>
-</div>
 <br>
-    <form method="post" action="ProPage4.php" onsubmit="return validar();">
-        <table class="d-flex justify-content-center">
-            <tr>
-                <td>Estrategia</td>
-                <td>%</td>
-            </tr> 
-            <tr>
-                <td>Estrategia 1</td>
-                <td><input type='number' name="EstG1" class='price'  />%</td>
-            </tr>
-            <tr>
-                <td>Estrategia 2</td>
-                <td><input type='number' name="EstG2" class='price' />%</td>
-            </tr>
-            <tr>
-                <td>Estrategia 3</td>
-                <td><input type='number' name="EstG3" class='price' />%</td>
-            </tr>
-            <tr>
-                <td></td>
-              <td><input type='number' name="EstGT" id='totalPrice' disabled ></td>
-            </tr>
-        </table>
-        <div class="text-right" style="margin:10px;">
-                    <input name="submit" type="submit" value="Siguiente" class="btn btn-outline-primary">    
-        <div>
-    </form>
-  
+
+    <div class="d-flex justify-content-center">
+    <div class="shadow-lg p-3 mb-5 bg-white rounded" style="width: 40rem; background-color:#F9FAFA;">
+        
+            <nav class="nav">
+                <img src="../img/user2.png" width="50" height="40" alt="" loading="lazy" style="margin-right:10px;">
+                <h5 style="margin-top:7px;"> <?php  echo $_SESSION['registro']['Apellidos'];?><?php  echo $_SESSION['registro']['Nombres'];?></h5>
+            </nav>
+    </div>
 </div>
+
+
+<div class="d-flex justify-content-center" >
+    <div class="shadow-lg p-3 mb-5 bg-white rounded" style="max-width: 40rem;">
+        <div class="text-center" style="margin:10px;">
+            <h3 class="card-title">Tu Posibilidades de Elección</h3>
+            <p class="card-text">Puedes escoger una o mas estrategias de tal manera que la suma debe ser 100.</p>
+            <h5 class="card-title">Pregunta guia: ¿Que posibilidad hay que elijas la estrategia "x".?</h5>
+        </div>
+        <br>
+        <form method="post" action="ProPage4.php" onsubmit="return validar();">
+            <table class="d-flex justify-content-center">
+                <tr>
+                    <td>Estrategia</td>
+                    <td>%</td>
+                </tr> 
+                <tr>
+                    <td>Estrategia 1</td>
+                    <td><input type='number' name="EstG1" class='price'  />%</td>
+                </tr>
+                <tr>
+                    <td>Estrategia 2</td>
+                    <td><input type='number' name="EstG2" class='price' />%</td>
+                </tr>
+                <tr>
+                    <td>Estrategia 3</td>
+                    <td><input type='number' name="EstG3" class='price' />%</td>
+                </tr>
+                <tr>
+                    <td></td>
+                <td><input type='number' name="EstGT" id='totalPrice' disabled ></td>
+                </tr>
+            </table>
+            <div class="text-right" style="margin:10px;">
+                        <input name="submit" type="submit" value="Siguiente" class="btn btn-outline-primary">    
+            <div>
+        </form>
+    </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
  
 <script>

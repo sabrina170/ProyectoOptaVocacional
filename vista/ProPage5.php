@@ -86,18 +86,23 @@ $resultado->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nostros</title>
 
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<nav class="navbar navbar-primary bg-primary">
-        <a class="navbar-brand">COLABORADOR</a>
-        <form class="form-inline"> 
-            <a class="btn btn-dark" href="cerrar-sesion.php" type="submit">Cerrar Sessión</a>
-        </form>
+<nav class="navbar navbar-dark" style="background-color: #064D72;">
+	<a class="navbar-brand" href="#">Logo</a>
+ <form class="form-inline my-2 my-lg-0">
+      <a class="btn btn-warning my-2 my-sm-0" href="cerrar-sesion.php" >Cerrar sesión</a>
+ </form>
 </nav>
+
 <div id="content">
-        <img src="../img/logo.PNG" alt="">
+        <img src="../img/logo.PNG" class="img-fluid" alt="Responsive image">
 
         <hr style="height:5px; background-color:darkred;"></hr>
 
@@ -286,15 +291,11 @@ $resultado->execute();
           </div>
         </div>
 </div>    
-            <div class="button-next" style="margin:60px;">
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                          <div class="btn-group mr-2" role="group" aria-label="First group">
-                          <button class="ExportToWord" name="doc" style="text-decoration: none; padding: 10px; font-weight: 600;
-    font-size: 20px; color: #ffffff; background-color: #1883ba; border-radius: 6px; border: 2px solid #0016b0;">Descargar</button> 
-                          
-                          </div>
-                        </div>
-                </div>    
+            <div class="d-flex justify-content-center" >
+            <div class="btn btn-primary btn-lg active" style="margin:30px;">
+             <a class="ExportToWord" style="color:white;" name="doc">Descargar</a> 
+            </div>    
+            </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="FileSaver.js"></script> 
 <script src="jquery.wordexport.js"></script> 
