@@ -26,21 +26,15 @@
 </head>
 <style>
 body {
-
-background-image:url(../img/FondoPago.jpg);
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-color: #66999;
-}
+  background-image: radial-gradient(circle at 50% -20.71%, #fffff6 0, #fffbe1 16.67%, #faedcc 33.33%, #f2deb5 50%, #ebcf9f 66.67%, #e6c08c 83.33%, #e2b17a 100%);
+  }
 </style>
 <body>
 
 <!-- Main navigation -->
 <header>
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="">
 
   <div class="container"> 
 
@@ -108,8 +102,10 @@ background-color: #66999;
 <!-- Main navigation -->
 <br><br>
 <section>
-   
+
+<!-- News jumbotron -->
  <div class="container">
+ 
   <div class="row row-cols-1 row-cols-md-3">
     <div class="col mb-4">
       <div class="card">
@@ -170,20 +166,37 @@ background-color: #66999;
   
   </div>
   <span class="d-inline-block heavy-rain-gradient text-dark">
-    <ul>
+    
+  </span>
+  <hr>
+  <div class="media d-block d-md-flex">
+  <img src="../img/importante2.png" class="rounded float-left" alt="..." width="200px" height="200px">
+   <div class="media-body text-center text-md-left ml-md-3 ml-0">
+      <br>
+      <br>
+      <br>
+      <ul>
       <li><strong>Después de hacer el abono recibirá un código de acceso para que inicie sus estrategias vocacionales.</strong></li>
       <li><strong>Desde el momento en que ingrese su código de acceso,
          tiene 48 horas para crear las estrategias vocacionales que debe hacer con la participación de su hijo o hija.</strong></li>
       <li><strong>En todas las modalidades recibirá su comprobante de pago mediante e-mail.</strong></li>
     </ul>
-  </span>
+    </div>
+  </div>
+<hr>
   <div class="text-right" style="margin-bottom:30px;">
-    <a href="login.php" type="button" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 50px;;" class="btn btn-primary btn-lg">Siguiente <i class="fas fa-chevron-circle-right"></i></a>
+    <a href="login.php" type="button" style="color: white; border-radius: 50px;;" class="btn btn-black btn-lg">Siguiente <i class="fas fa-chevron-circle-right"></i></a>
 </div>
 </div>
 
 </section>
+ <!--Section: Content-->
+ <section class="text-center text-lg-left dark-grey-text">
 
+  
+
+</section>
+<!--Section: Content-->
 
 <!-- Modal -->
 <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

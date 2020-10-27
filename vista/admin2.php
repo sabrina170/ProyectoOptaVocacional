@@ -39,7 +39,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
   <style>
 body {
 
-background-image:url(../img/fondoadmin3.jpg);
+background-image:url(../img/FondoAdmin3.jpg);
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -50,23 +50,43 @@ background-color: #66999;
     
   <body> 
 
-
-<nav class="navbar navbar-dark bg-dark">
-<a class="navbar-brand" href="#">Datos Personales</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark lighten-1">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+    aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="admin.php">Credenciales <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="admin2.php">Datos Personales</a>
-      <a class="nav-link" href="admin3.php">Datos Tabla</a>
-      <a class="nav-link" href="admin4.php">Datos Resultados</a>
-    </div>
-        <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-dark my-2 my-sm-0" href="cerrar-sesion.php" >Cerrar sesión</a>
-    </form>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="navbar-brand" href="#">
+        Administrador
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin.php"><strong>Credenciales</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin2.php">Datos Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin3.php">Datos Tabla</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin4.php">Datos Resultados</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item avatar">
+        <a class="nav-link p-0" href="#">
+          <img src="../img/perfil.jpg" class="rounded-circle z-depth-0"
+            alt="avatar image" height="35">
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
+<!--/.Navbar -->
 <br>
 <div class="container">
         <div class="row">

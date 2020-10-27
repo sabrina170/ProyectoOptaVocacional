@@ -197,21 +197,21 @@ background-color: #66999;
                         <table class="d-flex justify-content-center">
                             <tr>
                                 <td>Estrategia</td>
-                                <td>%</td>
+                                <td></td>
                             </tr>
                             
                             <tr>
                                 <td>Estrategia A</td>
-                                <td><input type='number' name="EstE1" max="10" />%</td>
+                                <td><input type='number' name="EstE1" max="10" /></td>
                             </tr>
                             
                             <tr>
                                 <td>Estrategia B</td>
-                                <td><input type='number' name="EstE2" max="10" />%</td>
+                                <td><input type='number' name="EstE2" max="10" /></td>
                             </tr>
                             <tr>
                                 <td>Estrategia C</td>
-                                <td><input type='number' name="EstE3" max="10" />%</td>
+                                <td><input type='number' name="EstE3" max="10" /></td>
                             </tr>
                             
                         </table>

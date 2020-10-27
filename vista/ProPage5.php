@@ -207,73 +207,73 @@ $resultado->execute();
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">¿Qué carrera desea estudiar mi hijo?</th>
+                    <th scope="row">1.-¿Qué carrera desea estudiar mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A1'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B1'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C1'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿He hablado con mi hijo de esta carrera?</th>
+                    <th scope="row">2.-¿He hablado con mi hijo de esta carrera?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A2'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B2'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C2'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Qué nivel de estudios tomará mi hijo?</th>
+                    <th scope="row">3.-¿Qué nivel de estudios tomará mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A3'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B3'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C3'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿En dónde desea estudiar mi hijo esta carrera?</th>
+                    <th scope="row">4.-¿En dónde desea estudiar mi hijo esta carrera?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A4'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B4'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C4'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Mi hijo ha hecho OV para esta carrera?</th>
+                    <th scope="row">5.-¿Mi hijo ha hecho OV para esta carrera?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A5'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B5'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C5'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Lo veo como para estudiar esta carrera?</th>
+                    <th scope="row">6.-¿Lo veo como para estudiar esta carrera?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A6'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B6'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C6'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Con qué ayuda cuento para la educación de mi hijo?</th>
+                    <th scope="row">7.-¿Con qué ayuda cuento para la educación de mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A7'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B7'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C7'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿En qué ciudad podría vivir mi hijo?</th>
+                    <th scope="row">8.-¿En qué ciudad podría vivir mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A8'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B8'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C8'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Cuánto invertiría al mes en sus estudios?</th>
+                    <th scope="row">9.-¿Cuánto invertiría al mes en sus estudios?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A9'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B9'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C9'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿En qué sector laboral se ubicaría mi hijo?</th>
+                    <th scope="row">10.-¿Qué sector laboral se ubicaría mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A10'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B10'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C10'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿A qué cargo o puesto podría aspirar mi hijo?</th>
+                    <th scope="row">11.-¿A qué cargo o puesto podría aspirar mi hijo?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A11'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B11'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C11'];?></td>
                   </tr>
                   <tr>
-                    <th scope="row">¿Veo a mi hijo trabajando en esto?</th>
+                    <th scope="row">12.-¿Veo a mi hijo trabajando en esto?</th>
                     <td><?php  echo $_SESSION['registroTabla']['A12'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['B12'];?></td>
                     <td><?php  echo $_SESSION['registroTabla']['C12'];?></td>
@@ -358,7 +358,7 @@ $resultado->execute();
                   y pueden estar sujetos a sucesos  inesperados o cambios en los ítems establecidos
                   y analizados así como la falta de coherencia o veracidad en la información tomada en cuenta.</P>
                 <BR>
-                <?php echo date("d", $time)?> de <?php echo date("M", $time)?> del <?php echo date("Y", $time)?>
+                Fecha: <?php echo date("d", $time)?> de <?php echo date("M", $time)?> del <?php echo date("Y", $time)?>
                 <BR>
                 
             </div>
