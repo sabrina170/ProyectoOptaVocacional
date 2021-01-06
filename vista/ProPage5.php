@@ -162,7 +162,7 @@ $resultado->execute();
             </li>
             <li class="nav-item">
             <a href="cerrar-sesion.php"
-                class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
+                class="nav-link border border-light rounded waves-effect mr-2">
                 <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
             </a>
             </li>
@@ -358,7 +358,15 @@ $resultado->execute();
                   y pueden estar sujetos a sucesos  inesperados o cambios en los ítems establecidos
                   y analizados así como la falta de coherencia o veracidad en la información tomada en cuenta.</P>
                 <BR>
-                Fecha: <?php echo date("d", $time)?> de <?php echo date("M", $time)?> del <?php echo date("Y", $time)?>
+                Fecha: 
+                <?php
+                //  echo date("d", $time)
+                 ?>  <?php
+                  // echo date("M", $time)
+                  ?> 
+                  <?php 
+                  // echo date("Y", $time)
+                  ?>
                 <BR>
                 
             </div>

@@ -112,7 +112,7 @@ background-color: #66999;
 <!-- Main navigation -->
 
 <section>
-  <br>
+  <br><br>
 <div class="d-flex justify-content-center">
     <div class="card mb-3" style="max-width: 700px;">
       <div class="row no-gutters">
@@ -145,7 +145,7 @@ background-color: #66999;
     </div>
 </div>
 </section>
-<br>
+<br><br>
     
  <!--Footer-->
 <footer class="page-footer text-center font-small info-color-dark" >

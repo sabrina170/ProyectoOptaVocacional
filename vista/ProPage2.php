@@ -121,7 +121,7 @@ background-color: #66999;
         </li>
         <li class="nav-item">
         <a href="cerrar-sesion.php"
-                class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
+                class="nav-link border border-light rounded waves-effect mr-2">
                 <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
             </a>
         </li>
@@ -135,7 +135,7 @@ background-color: #66999;
 <!--/.Navbar-->
 </header>
 <!-- Main navigation -->
-<br>
+<br><br>
 
  
      

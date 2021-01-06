@@ -47,10 +47,22 @@ if (isset($_SESSION["usuario"])) {
 } else {
     header("location:login.php");
 }
+
+$id=$_SESSION["usuario"]["id"];
+include_once '../datos/Conexion.php';
+$objeto = new Conexion();
+$conexion = $objeto->conectar();
+
+$consulta = "SELECT  * FROM `usuarios` where id='$id'";
+$resultado = $conexion->prepare($consulta);
+$resultado->execute();
+$data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 				<!-- <h1><strong>Bienvenido</strong> <?php echo $_SESSION["usuario"]["id"]; ?></h1> -->
 <!-- Main navigation -->
+
+
 <header>
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -105,7 +117,7 @@ if (isset($_SESSION["usuario"])) {
         </li>
         <li class="nav-item">
         <a href="cerrar-sesion.php"
-                class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
+                class="nav-link border border-light rounded waves-effect mr-2">
                 <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
             </a>
         </li>
@@ -130,8 +142,68 @@ if (isset($_SESSION["usuario"])) {
         </div>
 </div> -->
 <section>
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false" style="position: absolute; top: 10px; right: 20px;">
+  <div class="toast-header">
+    <img src="../img/logo.png" class="rounded mr-2"  width="20px" height="20px">
+    <strong class="mr-auto">Notificación</strong>
+    <small>Ahora</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hola, Te quedan 
+  <?php                            
+                            foreach($data as $dat) {                                                        
+                            ?>
+                            <!-- <tr>
+                                <td><?php echo $dat['id'] ?></td>
+                                <td><?php echo $dat['usuario'];
+                                
+                                ?></td>
+                                <td><?php echo $dat['email'] ?></td>
+                                <td><?php echo $dat['password'] ?></td> 
+                                <td><?php echo $dat['telefono'] ?></td>    
+                                <td><?php echo $dat['privilegio'] ?></td> -->
+                                <td><?php $tr = $dat['fecha_registro'];?></td>
+                                <td></td>
+                                
+                            </tr>
+                            <?php
 
-  <br>
+                                }
+                                // echo $tr;
+                                                            
+//$now = new DateTime(); // current date/time
+
+// Si estas en Lima Peru Utiliza esta declaracion
+date_default_timezone_set("America/Lima"); 
+$mifecha= date($tr); 
+$NuevaFecha = strtotime ( '+2 hour' , strtotime ($mifecha) ) ; 
+$NuevaFecha = strtotime ( '+0 minute' , $NuevaFecha ) ; 
+$NuevaFecha = strtotime ( '+0 second' , $NuevaFecha ) ; 
+$NuevaFecha = date ( 'Y-m-d H:i:s' , $NuevaFecha); 
+// echo $NuevaFecha;
+
+$now = new DateTime($NuevaFecha);
+$ref = new DateTime();
+$diff = $now->diff($ref);
+// printf('%d días, %d horas, %d minutos', $diff->d, $diff->h, $diff->i);
+if ($diff->h = 1) {
+  printf('%d días, %d hora, %d minutos', $diff->d, $diff->h, $diff->i);
+}elseif($diff->d = 1) {
+  printf('%d día, %d horas, %d minutos', $diff->d, $diff->h, $diff->i);
+}elseif($diff->h = 1 && $diff->d = 1) {
+  printf('%d día, %d hora, %d minutos', $diff->d, $diff->h, $diff->i);
+}
+else{
+  printf('%d días, %d horas, %d minutos', $diff->d, $diff->h, $diff->i);
+}
+                          
+                          ?>                           
+  </div>
+</div>
+  <br><br>
 <div class="d-flex justify-content-center"> 
   <div class="card" style="width: 40rem;" >
   <br>
@@ -221,5 +293,13 @@ if (isset($_SESSION["usuario"])) {
 
 </footer>
 <!--Footer-->
+<script>
+$('.toast').toast('show');
+$('#element').toast('hide');
+$('#element').toast('dispose');
+$('#myToast').on('hidden.bs.toast', function () {
+  // do something...
+});
+</script>   
 </body>
 </html>

@@ -64,14 +64,14 @@ SELECT * FROM DatosUsuario
 
 SET GLOBAL event_scheduler = ON;
 
---DESACTIVAR USUARIO DESPUES DE 5 MINUTOS DE CREACION
+--DESACTIVAR USUARIO DESPUES DE 2 horas DE CREACION
 CREATE EVENT insertion_event3
 ON SCHEDULE  EVERY 1 MINUTE 
 STARTS  CURRENT_TIMESTAMP + INTERVAL 1 MINUTE
 ON COMPLETION PRESERVE
 DO 
 UPDATE usuarios SET usuario = '@Inactivo'
-WHERE fecha_registro < (current_time() - INTERVAL 5 minute) and privilegio="2";
+WHERE fecha_registro < (current_time() - INTERVAL 2 hour) and privilegio="2";
 
 -- CREATE EVENT insertion_event2
 -- ON SCHEDULE  EVERY 1 MINUTE 
@@ -94,7 +94,7 @@ correo VARCHAR(100)
 SELECT * FROM UsuarioPublico
 DROP TABLE UsuarioPublico
 
-
+mysql://b326e899766c41:84b783d0@us-cdbr-east-02.cleardb.com/heroku_aa006c7dfeb7025?reconnect=true
   
 
 

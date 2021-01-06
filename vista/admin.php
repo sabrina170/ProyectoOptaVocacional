@@ -87,10 +87,18 @@ background-color: #66999;
       </li>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item avatar">
+      <li class="nav-item avatar" style="margin-right: 20px;">
         <a class="nav-link p-0" href="#">
           <img src="../img/perfil.jpg" class="rounded-circle z-depth-0"
             alt="avatar image" height="35">
+        </a>
+        
+      </li>
+      
+      <li class="nav-item">
+      <a href="cerrar-sesion.php"
+                class="nav-link border border-light rounded waves-effect mr-2">
+                <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
         </a>
       </li>
     </ul>

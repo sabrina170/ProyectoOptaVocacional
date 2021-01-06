@@ -50,12 +50,13 @@
  height: 100%;
  z-index: 1;
  }
+ 
 </style>
 <body>
     <video onloadedmetadata="this.muted=true" autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
     <source src="Video/FondoProfesiones.mp4" type="video/mp4" />
     </video/>
-  <br>
+  <br><br>
     <div class="d-flex justify-content-center" >
         <div class="shadow-lg p-3 mb-5 bg-white rounded" style="max-width: 40rem; ">
             <div class="text-center" style="margin:10px; ">
@@ -81,6 +82,7 @@
             </form>
         </div>
     </div>
+    <br><br>
     <?php
      include_once 'datos/Conexion.php';
      $objeto = new Conexion();
@@ -103,7 +105,7 @@ if (!$result) {
 ?>
 
 <!--Footer-->
-<footer class="page-footer text-center font-small info-color-dark" >
+<footer class="page-footer text-center font-small info-color-dark" style="margin-bottom: 0px;" >
 
   <div class="rgba-stylish-strong">
     <br>

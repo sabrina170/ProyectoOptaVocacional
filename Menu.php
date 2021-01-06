@@ -120,100 +120,103 @@ background-color: #66999;
 
 <section >
 
+
+
+
 <div class="container">
   <!-- Card deck -->
-<div class="card-deck">
+      <div class="card-deck">
 
-<!-- Card -->
-<div class="card mb-4">
+        <!-- Card -->
+        <div class="card mb-4">
 
-  <!--Card image-->
-  <div class="view overlay">
-    <img class="card-img-top" src="img/img3.jpg"
-      alt="Card image cap">
-    <a href="#!">
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="img/img3.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
 
-  <!--Card content-->
-  <div class="card-body">
+          <!--Card content-->
+          <div class="card-body">
 
-    <!--Title-->
-    <h5 class="card-title" style="font-family: cursive; color: #398291;">DECIDIENDO</h5>
-    <!--Text-->
-    <p class="card-text">
-    Para diseñar estrategias vocacionales <br>
-    La mejor manera para elejir y decidir !!</p>
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <a href="vista/VistaPago.php" class="btn btn-light-blue btn-md">Ingresar</i></a>
+            <!--Title-->
+            <h5 class="card-title" style="font-family: cursive; color: #398291;">DECIDIENDO</h5>
+            <!--Text-->
+            <p class="card-text">
+            Para diseñar estrategias vocacionales <br>
+            La mejor manera para elejir y decidir !!</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="vista/VistaPago.php" class="btn btn-light-blue btn-md">Ingresar</i></a>
 
-  </div>
+          </div>
 
-</div>
-<!-- Card -->
+        </div>
+        <!-- Card -->
 
-<!-- Card -->
-<div class="card mb-4">
+        <!-- Card -->
+        <div class="card mb-4">
 
-  <!--Card image-->
-  <div class="view overlay">
-    <img class="card-img-top" src="img/img1.jpg"
-      alt="Card image cap">
-    <a href="#!">
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="img/img1.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
 
-  <!--Card content-->
-  <div class="card-body">
+          <!--Card content-->
+          <div class="card-body">
 
-    <!--Title-->
-    <h5 class="card-title" style="font-family: cursive; color: #aa294f;">ESCOGIENDO</h5>
-    <!--Text-->
-    <p class="card-text">
-    ¿Su hijo “sabe” lo que está escogiendo?  ¿Esta seguro?
-    Invítelo a resolver su cuestionario !!
-    </p>
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-  
-    <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#exampleModal">Ingresar</button>
+            <!--Title-->
+            <h5 class="card-title" style="font-family: cursive; color: #aa294f;">ESCOGIENDO</h5>
+            <!--Text-->
+            <p class="card-text">
+            ¿Su hijo “sabe” lo que está escogiendo?  ¿Esta seguro?
+            Invítelo a resolver su cuestionario !!
+            </p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          
+            <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#exampleModal">Ingresar</button>
 
-  </div>
+          </div>
 
-</div>
-<!-- Card -->
+        </div>
+        <!-- Card -->
 
-<!-- Card -->
-<div class="card mb-4">
+        <!-- Card -->
+        <div class="card mb-4">
 
-  <!--Card image-->
-  <div class="view overlay">
-    <img class="card-img-top" src="img/img2.jpg"
-      alt="Card image cap">
-    <a href="#!">
-      <div class="mask rgba-white-slight"></div>
-    </a>
-  </div>
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="img/img2.jpg"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
 
-  <!--Card content-->
-  <div class="card-body">
+          <!--Card content-->
+          <div class="card-body">
 
-    <!--Title-->
-    <h5 class="card-title" style="font-family: cursive; color: #225992;">APRENDIENDO</h5>
-    <!--Text-->
-    <p class="card-text">
-    Para que su hijo sepa a lo que se enfrenta, sepa de “esa” carrera, arte, oficio u ocupación que está pensando.  Dele información  !!</p>
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#exampleModal2">Ingresar</button>
+            <!--Title-->
+            <h5 class="card-title" style="font-family: cursive; color: #225992;">APRENDIENDO</h5>
+            <!--Text-->
+            <p class="card-text">
+            Para que su hijo sepa a lo que se enfrenta, sepa de “esa” carrera, arte, oficio u ocupación que está pensando.  Dele información  !!</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md" data-toggle="modal" data-target="#exampleModal2">Ingresar</button>
 
-  </div>
+          </div>
 
-</div>
-<!-- Card -->
+        </div>
+        <!-- Card -->
 
-</div>
-<!-- Card deck -->
+      </div>
+      <!-- Card deck -->
 </div>
 
 </section>
@@ -317,5 +320,6 @@ background-color: #66999;
 
 </footer>
 <!--Footer-->
+
 </body>
 </html>
