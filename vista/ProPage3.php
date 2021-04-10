@@ -67,7 +67,7 @@ $conexion = $objeto->conectar();
 
 $consulta = "INSERT INTO `datostabla` ( `Estrategia`, `Pre1`,
  `Pre2`, `Pre3`, `Pre4`, `Pre5`, `Pre6`, `Pre7`, `Pre8`, `Pre9`,
-  `Pre10`, `Pre11`, `Pre12`, `id_usu`)
+  `Pre10`, `Pre11`, `Pre12`, `id_dusu`)
    VALUES ('$EsA', '$Pre1A', '$Pre2A', '$Pre3A', '$Pre4A', '$Pre5A', '$Pre6A', '$Pre7A', '$Pre8A',
    '$Pre9A', '$Pre10A', '$Pre11A', '$Pre12A', '$id_usu'),
    ('$EsB','$Pre1B', '$Pre2B', '$Pre3B', '$Pre4B', '$Pre5B', '$Pre6B', '$Pre7B', '$Pre8B',

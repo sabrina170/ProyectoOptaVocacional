@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 }
 
+
 $Nombres = $_SESSION['registro']['Nombres'];
 $Apellidos = $_SESSION['registro']['Apellidos'];
 $Edad = $_SESSION['registro']['Edad'];

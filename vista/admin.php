@@ -127,7 +127,10 @@ if (isset($_SESSION["usuario"])) {
                 <th>Telefono</th>
                 <th>Privilegio</th>
                 <th>Fecha Registro</th>
+                <th>Docs</th>
                 <th>Acciones</th>
+
+
               </tr>
             </thead>
             <tbody>
@@ -142,7 +145,9 @@ if (isset($_SESSION["usuario"])) {
                   <td><?php echo $dat['telefono'] ?></td>
                   <td><?php echo $dat['privilegio'] ?></td>
                   <td><?php echo $dat['fecha_registro'] ?></td>
+                  <td><a href="admin2.php?id=<?php echo $dat['id'] ?>"><i class="far fa-sticky-note fa-2x"></i></a></td>
                   <td></td>
+
                 </tr>
               <?php
               }

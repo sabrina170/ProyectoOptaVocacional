@@ -3,6 +3,7 @@ USE Probabilidad
 
 drop DATABASE Probabilidad 
 
+
 CREATE TABLE `usuarios` (
   `id` int(11) PRIMARY KEY auto_increment,
   `usuario` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
@@ -14,7 +15,7 @@ CREATE TABLE `usuarios` (
 ) 
 
 CREATE TABLE DatosUsuario(
-id int primary key AUTO_INCREMENT,
+id_dusu int primary key AUTO_INCREMENT,
 nombres VARCHAR(30),
 apellidos VARCHAR(30),
 edad VARCHAR(30),
@@ -25,7 +26,7 @@ FOREIGN KEY (id_usu) REFERENCES usuarios(id)
 
 
 CREATE TABLE DatosTabla(
-id int PRIMARY KEY AUTO_INCREMENT,
+id_tabla int PRIMARY KEY AUTO_INCREMENT,
 Estrategia VARCHAR(30),
 Pre1 VARCHAR(50),
 Pre2 VARCHAR(50),
@@ -38,19 +39,20 @@ Pre8 VARCHAR(50),
 Pre9 VARCHAR(50),
 Pre10 VARCHAR(50),
 Pre11 VARCHAR(50),
-Pre12 VARCHAR(50),id_usu INT NOT NULL,
-FOREIGN KEY (id_usu) REFERENCES usuarios(id)
+Pre12 VARCHAR(50),
+id_dusu INT NOT NULL,
+FOREIGN KEY (id_dusu) REFERENCES datosusuario(id_dusu)
 )
 
 DROP TABLE Resultados
 
 CREATE TABLE Resultados(
-id int PRIMARY KEY AUTO_INCREMENT, 
+id_dre int PRIMARY KEY AUTO_INCREMENT, 
 Estrategia VARCHAR(30),
 Exito INT,
 Fracaso INT,
-id_usu INT NOT NULL,
-FOREIGN KEY (id_usu) REFERENCES usuarios(id)
+id_dusu INT NOT NULL,
+FOREIGN KEY (id_dusu) REFERENCES datosusuario(id_dusu)
 )
 
 INSERT INTO `usuarios` (`id`, `usuario`, `email`, `password`, telefono,
@@ -71,7 +73,7 @@ STARTS  CURRENT_TIMESTAMP + INTERVAL 1 MINUTE
 ON COMPLETION PRESERVE
 DO 
 UPDATE usuarios SET usuario = '@Inactivo'
-WHERE fecha_registro < (current_time() - INTERVAL 2 hour) and privilegio="2";
+WHERE fecha_registro < (current_time() - INTERVAL 72 hour) and privilegio="2";
 
 -- CREATE EVENT insertion_event2
 -- ON SCHEDULE  EVERY 1 MINUTE 

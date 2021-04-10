@@ -14,34 +14,34 @@ $fecha_registro = (isset($_POST['fecha_registro'])) ? $_POST['fecha_registro'] :
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 
-switch($opcion){
+switch ($opcion) {
     case 1: //alta
         $consulta = "INSERT INTO usuarios (`usuario`, `email`, `password`, `telefono`,  `privilegio`, `fecha_registro`)
-         VALUES ('$usuario', '$email', '$password', '$telefono',  '$privilegio', current_timestamp()); ";			
+         VALUES ('$usuario', '$email', '$password', '$telefono',  '$privilegio', current_timestamp()); ";
         $resultado = $conexion->prepare($consulta);
-        $resultado->execute(); 
+        $resultado->execute();
 
         $consulta = "SELECT * FROM usuarios ORDER BY id DESC LIMIT 1";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
-        $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
+        $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2: //modificación
         $consulta = "UPDATE usuarios SET usuario='$usuario', password='$password', telefono='$telefono',
-         email='$email', privilegio='$privilegio' WHERE id='$id' ";		
-        $resultado = $conexion->prepare($consulta);
-        $resultado->execute();        
-        
-        $consulta = "SELECT * FROM usuarios WHERE id='$id' ";       
+         email='$email', privilegio='$privilegio' WHERE id='$id' ";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
-        $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
-        break;        
-    case 3://baja
-        $consulta = "DELETE FROM usuarios WHERE id='$id' ";		
+
+        $consulta = "SELECT * FROM usuarios WHERE id='$id' ";
         $resultado = $conexion->prepare($consulta);
-        $resultado->execute();                           
-        break;        
+        $resultado->execute();
+        $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
+        break;
+    case 3: //baja
+        $consulta = "DELETE FROM usuarios WHERE id='$id' ";
+        $resultado = $conexion->prepare($consulta);
+        $resultado->execute();
+        break;
 }
 
 print json_encode($data, JSON_UNESCAPED_UNICODE); //enviar el array final en formato json a JS

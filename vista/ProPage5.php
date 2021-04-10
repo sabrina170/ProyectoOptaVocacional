@@ -69,7 +69,7 @@ include_once '../datos/Conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->conectar();
 
-$consulta = "INSERT INTO `resultados` (`Estrategia`, `Exito`, `Fracaso`, `id_usu`)
+$consulta = "INSERT INTO `Resultados` (`Estrategia`, `Exito`, `Fracaso`, `id_tabla`)
  VALUES ('$EsA', '$NFE1', '$NFF1', '$id_usu'),
  ('$EsB', '$NFE2', '$NFF2', '$id_usu'),
  ('$EsC', '$NFE3', '$NFF3', '$id_usu')";
@@ -374,8 +374,8 @@ $time =  time();
         <?php
         //  echo date("d", $time)
         ?> <?php
-                    // echo date("M", $time)
-                    ?>
+            // echo date("M", $time)
+            ?>
         <?php
         // echo date("Y", $time)
         ?>
